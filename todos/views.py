@@ -25,6 +25,6 @@ def add(request):
         todo = Todo(title=title, text=text)
         todo.save()
 
-        return redirect('/todos')
+        return redirect('/')
     else:
         return render(request, 'add.html')
